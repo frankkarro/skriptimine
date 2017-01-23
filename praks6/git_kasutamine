@@ -1,0 +1,20 @@
+1)paigalda root all 
+apt-get install git-all
+2)oma kasutaja all konfi git
+git config --global user.name "kasutajanimi"
+git config --global user.mail "mail@mail.ee"
+git config --global core.editor nano
+3)mine kataloogi kuis hoian skripte
+4)antud kaustas x git kasutajanime
+git init kasutajanimi
+5)loo ligipääs kaudsele kontole
+git remote add nimi https://github.com/kasutajanimi/repo.git
+6)lisa fail jälgimisele
+git add failinimi
+7)kirjelda muudatused
+git commit -a
+8)lükka kirjeldused kaudsele repole
+git push -u ligipääsu_nimi oksa_nimi
+ntks: git push -u skriptimine master
+9)juhul kui on probleeme lükkamisega, rakenda -f võti
+git push -uf skriptimine master
