@@ -1,0 +1,19 @@
+#!/bin/bash
+#FRANK_KARRO
+#Skript- menu_for, mis väljastab kasutajale menüü.
+echo "Would you like to have a menu?"
+echo "- Ofcourse"
+echo
+echo "1)Steak and potatoes"
+echo "2)Fish and chips"
+echo "3)Soup and salad"
+echo
+echo "Select your meal and enter one number between 1 to 3: "
+read num
+if [ $num -eq 1 ]; then
+	cat menu1
+elif [ $num -eq 2 ]; then
+	cat menu2
+elif [ $num -eq 3 ]; then
+	cat menu3
+fi

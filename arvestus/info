@@ -1,0 +1,24 @@
+#!/bin/bash
+#SKRIPT_INFO
+#Frank_Karro
+#Ülesanne:
+#
+#a)Skript tervitab sisselogitud kasutajat ja järkamiseks pakub vajutada -enter-
+#klahvi.
+#b)Väljastab kuupäeva ja kellaaega.
+#c)Väljastab antud kuu kalendrit.
+echo -n "Tere,"
+echo -n `whoami | cut -c1 | tr [a-z] [A-Z]`
+echo -n `whoami | cut -c2-`
+echo "!"
+echo -n "Press "Enter" to continiue..."
+read enter
+echo
+date +"Today is %A, %B %d, %Y, at %H:%M "
+echo
+echo -n "Press "Enter" to see calendar of"
+date +" %B..."
+read enter2
+date +"Calendar of %B, %Y"
+echo
+cal | tail -n 7

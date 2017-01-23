@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+#Frank_Karro
+#Annab kasutajale valida kolme roa vahel,
+#valides nendest 1-3, väljastab roa kirjelduse.
+echo "Choose your meal: "
+echo
+echo  "1) Steak n' Potatoes"
+echo  "2) Fish n' Chips"
+echo  "3) Soup n' Salad"
+echo
+echo  "Choose between number 1 to 3 and enter your selection please: "
+read selection
+if [ $selection -eq 1 ]; then
+	echo "Stick to your ribs!"
+	echo "Watch your cholesterol!"
+	echo "Enjoy your meal!"
+	echo
+elif [ $selection -eq 2 ]; then
+	echo "British are coming!"
+	echo "Enjoy your meal!"
+	echo
+else [ $selection -eq 3 ]; then
+	echo "Health foods..."
+	echo "Dieting is so boring!"
+	echo "Enjoy your meal!"
+fi
