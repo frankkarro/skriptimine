@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#
+#echo -n "Sisesta ajav22rtus"
+#read $kell
+kell=`date +%H`
+kasutaja=`whoami`
+echo -n "$kasutaja, "
+if [ $kell -ge 6 -a $kell -lt 12 ] ; then
+	echo "Tere hommikust"
+elif [ $kell -ge 12 -a $kell -lt 16 ] ; then
+	echo "Tere päevast"
+elif [ $kell -ge 16 -a $kell -lt 21 ] ; then
+	echo "Tere õhtust"
+elif [ $kell -ge 21 -a $kell -lt 23 ] ; then
+	echo "Head ööd!"
+elif [ $kell -ge 0 -a $kell -lt 5  ] ; then 
+	echo "Head ööd!"
+fi
