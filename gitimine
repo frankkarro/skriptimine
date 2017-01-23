@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#näitab millised failid on olemas
+#loob nende commitid
+#
+for sisu in `ls .`
+do
+	if [ -d $sisu ]; then
+		echo $sisu
+		cd $sisu
+		echo -n "git add "
+		for failid in `ls .`
+		do
+			echo -n "$failid "
+		done
+		echo
+		echo "git commit -m $sisu ylesanded"
+		cd ..
+	fi
+done
