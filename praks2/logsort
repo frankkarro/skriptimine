@@ -1,0 +1,4 @@
+#!/bin/bash
+find /var -type f -a -name "*.log" 2>/dev/null -exec wc -l {} \; \
+| sort -g -r \
+| cut -f2 -d" "

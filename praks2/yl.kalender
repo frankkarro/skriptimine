@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#Kuupaeva, kellaaja ja kalendri valjastamine
+
+echo
+date +"Today is %A, %B %d, %Y" #Kuupaev
+date +"Time is %H:%M" #kell
+echo #tyhi rida
+date +"Calendar of %B, %Y"
+echo #tyhi rida
+cal | tail -n 7

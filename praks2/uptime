@@ -1,0 +1,11 @@
+#!/bin/bash 
+#
+#hosti tööaja kontroll
+echo
+echo -n "Host"
+echo -n `hostname`
+echo -n " is up since"
+echo `uptime -s`
+echo "This host is up "
+uptime | cut -f1 -d"," | cut -f5 -d" "
+echo
