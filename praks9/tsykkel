@@ -1,0 +1,27 @@
+#!/bin/bash
+#TSÜKKLID
+
+#// for tsükkel
+#tsükkli töö sooritamiseks - tsükli juhtimismuutuja (tjm)
+#
+#for ((tjm defineerimine; tjm viimase väärtuse kontroll;
+#					tjm suurenda / vähenda)) 
+#do 
+#	tegevused
+#	mis peavad toimuma
+#	tsükkli sees- 
+#	korduvad tegevused
+#done
+#
+#__________________
+#Ülesanne:
+#Trüki välja väärtused:
+#1
+#2
+#3
+#__________________
+for (( arv=1; arv<=3; arv++ ))
+
+do
+	echo "$arv"
+done
