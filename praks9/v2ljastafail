@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#Tsükklite kasutamine
+#väljasta failide file1 file2 file3 sisu
+
+for(( arv=1; arv<=3; arv++ ))
+do
+	cat "file$arv"
+done
