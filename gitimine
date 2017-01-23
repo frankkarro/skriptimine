@@ -8,13 +8,13 @@ do
 	if [ -d $sisu ]; then
 		echo $sisu
 		cd $sisu
-		echo -n "git add "
+		lisa=""
 		for failid in `ls .`
 		do
-			echo -n "$failid "
+			lisa=$lisa"$failid "
 		done
-		echo
-		echo "git commit -m $sisu ylesanded"
+		git add $lisa
+		git commit -m "$sisu ylesanded"
 		cd ..
 	fi
 done
