@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#sisseehitatud if lause näide
+#arv on pos, neg voi null
+#
+#kasutaja sisend
+echo -n "Sisesta suvaline täisarv:"
+read arv
+#kontrollime kas arv on pos suurem või võrdne nulliuga
+if [ $arv -ge 0 ] ; then
+	if [ $arv -eq 0 ] ; then
+	echo "$arv on null"
+	else
+		echo "$arv -positiivne"
+	fi
+else
+	echo "$arv on negatiivne"
+fi
+	
