@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -n "Enter a:"
+read a
+echo -n "Enter b:"
+read b
+echo -n "Enter c:"
+read c
+p=`echo "scale=2;($a + $b + $c) / 2" | bc`
+echo "scale=2;sqrt($p * ($p - $a) * ($p - $b) * ($p - $c))" | bc
+

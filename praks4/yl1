@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+#täisnurkse kolmnurga pindala arvutamine
+#kasutame expr käsu võimalusi
+#uurime kuidas kasutada $((avaldis)) võimalusi
+#uurime bc käsu tööd
+echo -n "Sisesta a kylg:"
+read a
+echo -n "Sisesta b kylg:"
+read b
+#
+echo "a = $a"
+echo "b = $b"
+#arvutamine
+#c = ruutjuur (a_ruudus + b_ruudus)
+# a_ruut=`expr $a \* $a`
+# b_ruut=`expr $a \* $a`
+# ab=`expr $a_ruut + $b_ruut`
+# echo "scale=2;sqrt($ab)" | bc
+#a_ruut=$(($a * $a))
+#echo "a_ruudus = $a_ruut"
+#b_ruut=$(($b * $b))
+#c=((echo "b_ruudus = $b_ruut"))
+#echo -n "c = "
+#echo "scale=2;sqrt($ab)" | bc
+echo "scale=2;sqrt($a^2 + $b^2)" |bc
